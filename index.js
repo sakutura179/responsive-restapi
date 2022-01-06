@@ -1,6 +1,7 @@
-var postApi = 'http://localhost:4000/courses'
+var jsonServerURL = 'https://my-json-server.typicode.com/sakutura179/responsive-restapi/'
+var coursesApi = `${jsonServerURL}courses`
 
-fetch(postApi)
+fetch(coursesApi)
     .then(respone =>  respone.json()) // Tra ve 1 promise. respone la 1 object, respone.json() da duoc chuyen tu JSON sang Javascript type. Do do o duoi se nhan duoc thang 1 array gom cac object
     .then(courses => {
         let coursesContainer = document.querySelector('#courses');

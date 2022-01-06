@@ -14,6 +14,11 @@
             "id": 3,
             "name": "Introduction to PHP",
             "description": "This course teaches the basics of PHP, the programming language used to add interactivity to web pages."
+        },
+        {
+            "id": 4,
+            "name": "Introduction to ReactJS",
+            "description": "This course teaches the basics of ReactJS."
         }
     ]
 }
