@@ -12,13 +12,23 @@
     },
     {
       "name": "Introduction to ReactJS",
-      "description": "This course teaches the basics of ReactJS. ",
+      "description": "This course teaches the basics of ReactJS, Redux, ReactRoute. ",
       "id": 3
     },
     {
       "name": "Introduction to PHP",
       "description": "This course teaches the basics of PHP.",
       "id": 4
+    },
+    {
+      "name": "Introduction to VueJS",
+      "description": "This course teaches the basics of VueJS.",
+      "id": 5
+    },
+    {
+      "name": "Introduction to Angular 8",
+      "description": "This course teaches the basics of Angular 8. This will help you a lot",
+      "id": 6
     }
   ]
 }
