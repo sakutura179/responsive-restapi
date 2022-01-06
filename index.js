@@ -1,5 +1,5 @@
-// var jsonServerURL = 'https://my-json-server.typicode.com/sakutura179/responsive-restapi/'
-var jsonServerURL = 'http://localhost:4000/'
+var jsonServerURL = 'https://my-json-server.typicode.com/sakutura179/responsive-restapi/'
+// var jsonServerURL = 'http://localhost:4000/'
 var coursesApi = `${jsonServerURL}courses`
 
 function start(params) {
