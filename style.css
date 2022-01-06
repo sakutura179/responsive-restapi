@@ -1,31 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;700&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+}
+
+body {
+    padding: 10px;
 }
 
 .pc,
 .tablet,
 .mobile {
-    font-size: 100px;
     text-align: center;
     display: none;
 }
 
-table,
-td,
-th {
-    border: 1px solid black;
+#container {
+    width: 100%;
+    display: flex;
 }
 
-table {
-    width: 50%;
-    border-collapse: collapse;
+ul#courses {
+    list-style: none;
+    padding: 0;
+    width: 45%;
+}
+
+li.course {
+    padding: 10px;
+}
+
+li.course:nth-child(even) {
+    background-color: #f2f2f2;
+}
+li.course:nth-child(odd) {
+    background-color: wheat;
+}
+
+li.course:first-child {
+    border-radius: 12px 12px 0 0;
+}
+
+li.course:last-child {
+    border-radius: 0 0 12px 12px;
+}
+
+#create-btn {
+    cursor: pointer;
 }
 
 @media screen and (min-width: 64em) {
     h1 {
         color: red;
+        font-size: 100px;
     }
 
     .pc {
@@ -36,6 +66,7 @@ table {
 @media screen and (min-width: 46.3125em) and (max-width: 63.9375em) {
     h1 {
         color: blue;
+        font-size: 72px;
     }
 
     .tablet {
@@ -46,6 +77,7 @@ table {
 @media screen and (max-width: 46.25em) {
     h1 {
         color: green;
+        font-size: 64px;
     }
 
     .mobile {
