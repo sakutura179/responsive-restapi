@@ -1,0 +1,19 @@
+{
+    "courses": [
+        {
+            "id": 1,
+            "name": "Introduction to HTML and CSS",
+            "description": "This course teaches the basics of HTML and CSS, the two languages used in web development. You'll learn how to create pages with HTML and how to style them with CSS. You'll learn what's important about good web design and how to use CSS to control the look and feel of your web pages."
+        },
+        {
+            "id": 2,
+            "name": "Introduction to JavaScript",
+            "description": "This course teaches the basics of JavaScript, the programming language used to add interactivity to web pages. You'll learn how to write code that performs simple and useful tasks on a web page. You'll learn how to use JavaScript to add animation, expand functionality, and add sound effects to your web pages."
+        },
+        {
+            "id": 3,
+            "name": "Introduction to PHP",
+            "description": "This course teaches the basics of PHP, the programming language used to add interactivity to web pages."
+        }
+    ]
+}

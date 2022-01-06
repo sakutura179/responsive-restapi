@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.pc,
+.tablet,
+.mobile {
+    font-size: 100px;
+    text-align: center;
+    display: none;
+}
+
+table,
+td,
+th {
+    border: 1px solid black;
+}
+
+table {
+    width: 50%;
+    border-collapse: collapse;
+}
+
+@media screen and (min-width: 64em) {
+    h1 {
+        color: red;
+    }
+
+    .pc {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 46.3125em) and (max-width: 63.9375em) {
+    h1 {
+        color: blue;
+    }
+
+    .tablet {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 46.25em) {
+    h1 {
+        color: green;
+    }
+
+    .mobile {
+        display: block;
+    }
+}
