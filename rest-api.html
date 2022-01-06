@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="rest-api.css">
+</head>
+<body>
+    <div id="container">
+        <ul id="courses"></ul>
+        <div class="form">
+            <div class="item">
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name">
+            </div>
+            <div class="item">
+                <label for="description">Description</label>
+                <textarea name="description" id="description" cols="30" rows="10"></textarea>
+            </div>
+            <div class="item submit">
+                <button id="create-btn" onclick="handleCreateCourse()">Create</button>
+            </div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>

@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;700&display=swap');
 
+/* PC */
 * {
     margin: 0;
     padding: 0;
@@ -8,79 +9,147 @@
 }
 
 body {
+    background-color: gray;
+}
+
+.main {
     padding: 10px;
+    margin-bottom: 15%;
+    background-color: #fff;
 }
 
-.pc,
-.tablet,
-.mobile {
-    text-align: center;
-    display: none;
-}
-
-#container {
+/* Product */
+.main__product {
+    display: flex;
     width: 100%;
+}
+
+.main__product .main__product_img,
+.main__product .main__product_info {
+    margin: 10px;
+}
+
+.main__product .main__product_img {
+    width: 40%;
+}
+
+.main__product .main__product_info {
+    width: 60%;
+}
+
+
+/* Course */
+.main__categories_courses {
     display: flex;
 }
 
-ul#courses {
-    list-style: none;
-    padding: 0;
-    width: 45%;
+.main__categories,
+.main__courses {
+    margin: 10px;
 }
 
-li.course {
-    padding: 10px;
+.main__categories {
+    width: 15%;
 }
 
-li.course:nth-child(even) {
-    background-color: #f2f2f2;
-}
-li.course:nth-child(odd) {
-    background-color: wheat;
+.main__categories .cate_list {
+    list-style-type: none;
 }
 
-li.course:first-child {
-    border-radius: 12px 12px 0 0;
+.main__categories .cate_list .cate_item {
+    margin: 15px 0;
 }
 
-li.course:last-child {
-    border-radius: 0 0 12px 12px;
+.main__categories .cate_list .cate_item a {
+    text-decoration: none;
 }
 
-#create-btn {
-    cursor: pointer;
+.main__categories .cate_list .cate_item a:hover {
+    text-decoration: underline;
 }
 
-@media screen and (min-width: 64em) {
-    h1 {
-        color: red;
-        font-size: 100px;
+.main__courses {
+    width: 85%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.main__courses .main__course {
+    margin: 10px;
+    width: 20%;
+}
+
+.main__courses .main__course .course_content {
+    text-align: justify;
+}
+
+/* Tablet and mobile */
+@media screen and (max-width: 63.9375em) {
+    .main__product {
+        flex-direction: column-reverse;
+        align-items: center;
     }
 
-    .pc {
-        display: block;
+    .main__product .main__product_info {
+        width: 100%;
     }
+
+    .main__product .main__product_img {
+        width: 80%;
+    }
+
+    .main__product .main__product_desc {
+        display: none;
+    }
+
+    /* Course */
 }
 
+/* Tablet */
 @media screen and (min-width: 46.3125em) and (max-width: 63.9375em) {
-    h1 {
-        color: blue;
-        font-size: 72px;
+    .main__product .main__product_img {
+        width: 80%;
     }
 
-    .tablet {
-        display: block;
+    .main__product_name {
+        font-size: 1.5rem;
+    }
+
+    /* Course */
+    .main__courses .main__course {
+        width: 45%;
     }
 }
 
+/* Mobile */
 @media screen and (max-width: 46.25em) {
-    h1 {
-        color: green;
-        font-size: 64px;
+    .main__product .main__product_img {
+        width: 100%;
     }
 
-    .mobile {
-        display: block;
+    .main__product_name {
+        font-size: 1.2rem;
+    }
+
+    /* Course */
+    .main__categories {
+        display: none;
+    }
+
+    .main__courses {
+        flex-direction: column;
+    }
+
+    .main__courses .main__course {
+        width: 100%;
+    }
+
+    .main__courses .main__course .course_title {
+        font-size: 1rem;
+    }
+
+    .main__courses .main__course .course_content {
+        font-size: 0.8rem;
     }
 }

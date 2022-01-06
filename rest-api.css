@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+}
+
+body {
+    padding: 10px;
+}
+
+#container {
+    width: 100%;
+    display: flex;
+}
+
+ul#courses {
+    list-style: none;
+    padding: 0;
+    width: 45%;
+}
+
+li.course {
+    padding: 10px;
+}
+
+li.course:nth-child(even) {
+    background-color: #f2f2f2;
+}
+li.course:nth-child(odd) {
+    background-color: wheat;
+}
+
+li.course:first-child {
+    border-radius: 12px 12px 0 0;
+}
+
+li.course:last-child {
+    border-radius: 0 0 12px 12px;
+}
+
+#create-btn {
+    cursor: pointer;
+}
