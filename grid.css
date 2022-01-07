@@ -9,16 +9,16 @@
     margin: 0 auto;
 }
 
+/* Tablet */
+@media screen and (min-width: 740px) and (max-width: 1023px) {
+    .grid.wide {
+        max-width: 644px;
+    }
+}
 /* PC low resolution */
 @media screen and (min-width: 1024px) and (max-width: 1239px) {
-    .wide {
-        max-width: 984px!important;
+    .grid.wide {
+        max-width: 984px;
     }
 }
 
-/* Tablet */
-@media screen and (min-width: 740px) and (max-width: 1023px) {
-    .wide {
-        max-width: 644px!important;
-    }
-}
