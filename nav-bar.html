@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="nav-bar.css">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <title>Nav bar</title>
+</head>
+<body>
+    <div class="main">
+        <div class="nav">
+            <!-- PC nav -->
+            <nav class="nav__pc">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#" class="nav__link">Home</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#" class="nav__link">About</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#" class="nav__link">Category</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#" class="nav__link">News</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#" class="nav__link">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <label for="nav-mobile-input" class="nav_bars_btn">
+                <i class='bx bx-menu'></i>
+            </label>
+
+            <input hidden type="checkbox" class="input__mobile" name="nav-mobile-input" id="nav-mobile-input">
+
+            <label for="nav-mobile-input" class="nav__overlay"></label>
+            <!-- Mobile nav -->
+            <nav class="nav__mobile">
+                <label for="nav-mobile-input">
+                    <i class='bx bx-x close-btn'></i>
+                </label>
+                <ul class="nav__mobile_list">
+                    <li class="nav__item">
+                        <a href="#" class="nav__mobile_link">Home</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#" class="nav__mobile_link">About</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#" class="nav__mobile_link">Category</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#" class="nav__mobile_link">News</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#" class="nav__mobile_link">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</body>
+</html>

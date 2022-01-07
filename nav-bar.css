@@ -1,0 +1,157 @@
+.nav {
+    background-color: #121218;
+    border-bottom: 3px solid yellow;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    height: 50px;
+}
+
+.nav .nav__pc {
+    width: 100%;
+}
+
+.nav .nav__pc .nav__list {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: left;
+    width: 100%;
+    color: white;
+    list-style-type: none;
+}
+
+.nav .nav__pc .nav__list .nav__item {
+    display: block;    
+}
+
+.nav .nav__pc .nav__list .nav__item a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: 13px 20px;
+}
+
+.nav .nav__pc .nav__list .nav__item a:hover,
+.nav_bars_btn i:hover {
+    background-color: whitesmoke;
+    color: #121218;
+}
+
+.nav_bars_btn {
+    width: 50px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: none;
+}
+
+.nav_bars_btn i {
+    color: white;
+    font-size: 30px;
+    display: block;
+    width: 100%;
+    text-align: center;
+    cursor: pointer;
+    line-height: 47px;
+}
+
+/* Overlay trang web */
+.nav__overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    display: none;
+    animation: fadeIn .35s linear;
+}
+
+/* Nav cua mobile */
+.nav__mobile {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 300px;
+    max-width: 100%;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+    transform: translateX(100%);
+    transition: all .35s linear;
+}
+
+.nav__mobile .close-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 27px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.nav__mobile_list {
+    list-style-type: none;
+    margin-top: 46px;
+    border-top: 1px solid #ccc;
+}
+
+.nav__mobile_link {
+    text-decoration: none;
+    color: #121218;
+    display: block;
+    padding: 14px 20px;
+    font-size: 1.2rem;
+}
+
+.nav__mobile_link:hover {
+    background-color: whitesmoke;
+}
+
+/* Hien thi ra mobile nav va overlay */
+.input__mobile:checked ~ .nav__overlay {
+    display: block;
+}
+
+.input__mobile:checked ~ .nav__mobile {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+
+
+/* Tablet and mobile */
+@media screen and (max-width: 63.9375em) {
+    .nav .nav__pc {
+        display: none;
+    }
+
+    .nav_bars_btn {
+        display: block;
+    }
+}
+
+/* Tablet */
+@media screen and (min-width: 46.3125em) and (max-width: 63.9375em) {
+    
+}
+
+/* Mobile */
+@media screen and (max-width: 46.25em) {
+    
+}
+
+
+/* Overlay keyframe */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
