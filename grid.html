@@ -6,15 +6,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
         .container {
-            background-color: aqua;
             text-align: center;
         }
 
-        h1 {
-            padding: 100px 0;
-            margin: 0;
-            font-size: 100px;
-            color: white;
+        .course-item {
+            background-color: #112732;
+            height: 260px;
+        }
+
+        .course-item h2 {
+            color: #fff;
+        }
+
+        .course-item {
+            margin-top: 8px;
+        }
+
+        @media screen and (min-width: 1024px) and (max-width: 1239px) {
+            .wide .col .course-item {
+                margin-top: 24px;
+            }
+        }
+
+        @media screen and (min-width: 740px) {
+            .course-item {
+                margin-top: 16px;
+            }
+        }
+
+        @media screen and (min-width: 1113px) {
+            .course-item {
+                margin-top: 24px;
+            }
+        }
+
+        .category {
+            background-color: #112732;
+            color: #fff;
+            margin-top: 24px;
+            padding: 16px;
+            text-align: left;
+        }
+
+        ul {
+            list-style-type: none;
         }
     </style>
     <link rel="stylesheet" href="style.css">
@@ -23,7 +58,45 @@
 </head>
 <body>
     <div class="grid wide container">
-        <h1>GRID SYSTEM</h1>
+        <div class="row">
+            <div class="col l-3 m-0 s-0">
+                <div class="row">
+                    <div class="col l-12">
+                        <div class="category">
+                            <ul>
+                                <li>JavaScript</li>
+                                <li>PHP</li>
+                                <li>HTML & CSS</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col l-9 m-12 s-12">
+                <div class="row">
+                    <div class="col l-4 m-6 s-12">
+                        <div class="course-item">
+                            <h2>Course 1</h2>
+                        </div>
+                    </div>
+                    <div class="col l-4 m-6 s-12">
+                        <div class="course-item">
+                            <h2>Course 2</h2>
+                        </div>
+                    </div>
+                    <div class="col l-4 m-6 s-12">
+                        <div class="course-item">
+                            <h2>Course 3</h2>
+                        </div>
+                    </div>
+                    <div class="col l-4 m-6 s-12 l-o-4">
+                        <div class="course-item">
+                            <h2>Course 4 có sử dụng offset column</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 </html>

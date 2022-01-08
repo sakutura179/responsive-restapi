@@ -1,0 +1,13 @@
+.col {
+    padding: 10px;
+}
+
+.item {
+    background-color: #ccc;
+    text-align: center;
+    padding: 8px 0;
+}
+
+.item a {
+    text-decoration: none;
+}
