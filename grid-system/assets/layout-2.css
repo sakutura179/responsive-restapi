@@ -1,0 +1,134 @@
+.col .product-img,
+.col .product-info {
+    margin-top: 15px;
+}
+
+.col .product-img img {
+    width: 100%;
+}
+
+.col .product-info .product-title p {
+    font-size: 1.5rem;
+}
+
+.col .product-info .product-rate {
+    margin: 15px 0;
+    text-transform: capitalize;
+}
+
+.col .product-info .product-rate span {
+    padding: 0 15px;
+    border-right: 1px solid #ccc;
+    font-size: 14px;
+}
+
+.col .product-info .product-rate span:first-child {
+    padding-left: 0;
+}
+
+.col .product-info .product-rate span:last-child {
+    border-right: none;
+}
+
+.col .product-info .product-rate span>.number {
+    font-size: 18px;
+    font-style: normal;
+}
+
+.col .product-info .product-rate span i.bx {
+    color: red;
+}
+
+.col .product-info .product-rate span a {
+    display: inline-block;
+    color: black;
+    margin-right: 5px;
+    text-decoration: none;
+    border-bottom: 1px solid;
+}
+
+.col .product-info .product-rate span a.rate {
+    color: red;
+}
+
+.col .product-info .product-price {
+    margin-bottom: 25px;
+    background-color: #fafafa;
+    padding: 15px 20px;
+}
+
+.col .product-info .product-price .original-price {
+    font-style: normal;
+    text-decoration: line-through;
+    color: rgba(0, 0, 0, 0.5);
+    margin-right: 10px;
+}
+
+.col .product-info .product-price .discount-price {
+    font-size: 1.8rem;
+    color: red;
+    font-style: normal;
+}
+
+.col .product-info .product-quantity-transport {
+    margin-bottom: 15px;
+}
+
+.col .product-info .product-quantity-transport>table td {
+    vertical-align: top;
+    padding: 20px 30px 20px 0;
+}
+
+.col .product-info .product-quantity-transport>table td p {
+    margin-bottom: 15px;
+}
+
+.col .product-info .product-quantity-transport>table td p:last-child {
+    margin-bottom: 0;
+}
+
+.col .product-info .product-quantity-transport>table td #quantity {
+    width: 50px;
+    height: 35px;
+    text-align: center;
+    margin-right: 35px;
+    outline: none;
+}
+
+.col .product-info .product-add-to-cart {
+    display: flex;
+    height: 50px;
+}
+
+.col .product-info .product-add-to-cart .btn {
+    margin-right: 20px;
+    padding: 0 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.col .product-info .product-add-to-cart .add-btn {
+    border: 1px solid #ee4d2d;
+    background-color: #ffeee8;
+    color: #ee4d2d;
+}
+
+.col .product-info .product-add-to-cart .buy-btn {
+    border: 1px solid #ee4d2d;
+    background-color: #ee4d2d;
+    color: #ffeee8;
+}
+
+/* Tablet */
+@media screen and (max-width: 1023px) {
+    .col .product-info .product-price .original-price {
+        font-size: 0.8rem;
+    }
+    .col .product-info .product-price .discount-price {
+        font-size: 1.2rem;
+    }
+
+    .col .product-info .product-rate span {
+        padding: 0 10px;
+    }
+}

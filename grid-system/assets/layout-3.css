@@ -1,0 +1,135 @@
+.row {
+    margin-left: -2px;
+    margin-right: -2px;
+}
+
+.col {
+    padding-left: 2px;
+    padding-right: 2px;
+}
+
+@media screen and (min-width: 740px) {
+    .row {
+        margin-left: -4px;
+        margin-right: -4px;
+    }
+
+    .col {
+        padding-left: 4px;
+        padding-right: 4px;
+    }
+}
+
+@media screen and (min-width: 1113px) {
+    .row {
+        margin-left: -6px;
+        margin-right: -6px;
+    }
+
+    .col {
+        padding-left: 6px;
+        padding-right: 6px;
+    }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1239px) {
+
+    .wide .row {
+        margin-left: -6px;
+        margin-right: -6px;
+    }
+
+    .wide .col {
+        padding-left: 6px;
+        padding-right: 6px;
+    }
+}
+
+.category,
+.product {
+    margin-top: 12px;
+}
+
+.category .list {
+    list-style-type: none;
+    font-size: 1.2rem;
+}
+
+.category .list .list-item a {
+    text-decoration: none;
+    color: black;
+}
+
+.category .list .list-item.active a {
+    color: red;
+}
+
+.product {
+    background-color: whitesmoke;
+    padding-bottom: 10px;
+}
+
+.product .product-img img {
+    width: 100%;
+}
+
+.product .product-title,
+.product .product-price,
+.product .product-rate {
+    margin: 0 10px 10px 10px;
+}
+
+.product .product-price .original-price {
+    font-size: 12px;
+    text-decoration: line-through;
+    font-style: normal;
+    display: block;
+}
+
+.product .product-price .original-price.none {
+    visibility: hidden;
+}
+
+.product .product-price .discount-price {
+    font-size: 1rem;
+    font-style: normal;
+    color: red;
+    display: block;
+}
+
+.product .product-rate {
+    font-size: .75rem;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.product .product-rate span {
+    margin-left: 10px;
+}
+
+.product .product-rate span .bx {
+    color: yellow;
+}
+
+.product .ship {
+    font-size: 14px;
+    text-align: right;
+    margin: 0 10px
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1239px) {
+    .product .product-title,
+    .product .product-price,
+    .product .product-rate,
+    .product .ship {
+        margin: 0 5px 5px 5px;
+    }
+
+   .product .product-price .discount-price {
+        font-size: 14px;
+    }
+
+    .product .product-rate span {
+        margin-left: 5px;
+    }
+}

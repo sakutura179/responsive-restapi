@@ -1,0 +1,44 @@
+body {
+    background-color: lightcyan;
+}
+
+.item {
+    margin-top: 16px;
+    background-color: #fff;
+}
+
+.product-img img {
+    width: 100%;
+}
+
+.product-info {
+    padding: 0 12px 12px 12px;
+}
+
+.product-info .product-title {
+    text-transform: uppercase;
+}
+
+.product-info .product-buy {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 24px;
+}
+
+.product-info .product-buy .product-price {
+    font-size: 1.2rem;
+    color: red;
+}
+
+.product-info .product-buy .product-btn button {
+    height: 100%;
+    color: white;
+    background-color: red;
+    outline: none;
+    border: none;
+    padding: 4px 8px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+}
