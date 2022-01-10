@@ -1,0 +1,33 @@
+.main {
+    display: flex;
+    margin: 0 20px;
+}
+
+.sidebar {
+    width: 300px;
+}
+
+.content {
+    width: calc(100% - 300px);
+}
+
+.content>p {
+    font-size: 12px;
+}
+
+.col .item {
+    margin-top: 16px;
+    text-align: center;
+    background-color: wheat;
+    height: 180px;
+}
+
+@media screen and (max-width: 740px){
+    .sidebar {
+        display: none;
+    }
+
+    .content {
+        width: 100%;
+    }
+}
